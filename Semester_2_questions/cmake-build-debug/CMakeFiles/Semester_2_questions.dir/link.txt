@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libSemester_2_questions.a  CMakeFiles/Semester_2_questions.dir/library.c.o CMakeFiles/Semester_2_questions.dir/Hello_File.c.o
+/usr/bin/ranlib.exe libSemester_2_questions.a

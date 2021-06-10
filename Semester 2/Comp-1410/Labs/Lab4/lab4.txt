@@ -1,0 +1,61 @@
+1.
+    ethics  expand
+    cthies  axpend
+    cehits  adpenx
+    cehits  adepnx
+    cehist  adenpx
+    cehist  adenpx
+
+
+int main(void);
+    Deals with calling assertion statements. And saying if everything was successful.
+
+char *select_min(char str[], int num);
+    selects the smallest ascii value it can find. The num if for starting at a specific section
+    since I connected it to void str_sort(char str[]);
+    See: void str_sort(char str[]); for more information on how the smallest ascii character is necessary.
+
+void str_sort(char str[]);
+    sorts strings based on ascii values. It is in O(n^2) since it iterates the length of the array
+    and for every iteration it iterates over the remaining array char *select_min(char str[], int num);
+    scouring for the smallest ascii value in the string, returning the position by pointer. it then swaps
+    them over in O(n) since at worst char *select_min(char str[], int num); only needs to check n elements
+    before it stumbles upon the smallest character making it O(n)
+    See: char *select_min(char str[], int num); for more information on how it scours the array.
+    See: void idkSwaps(char *x, char *y); for more information on how it swaps array elements around
+
+void strSortBetter(char str[]);
+    A better sorting algorithm when it comes to speed clocking in at a whopping O(2n) since it
+    iterates over the array once then iterates over another array for n times. making it O(n + n) or O(n)
+    It needs a bit more space to function as it needs to store the count of ascii characters which share
+    the same ascii value in an array of size 256. Sadly onlinegdb can't handle a file larger then 100kb
+    so I had to half my example of this sort algorithm.
+
+void specialAsserts(char testBetter[], char testStr_sort[]);
+    does Special Asserts
+
+void assertingStrings();
+    holds some asserts that go with void specialAsserts(char testBetter[], char testStr_sort[]);
+
+void str_sortAsserts();
+    deals with asserts for void str_sort(char str[]);
+    See: void str_sort(char str[]); for more information on how it sorts strings.
+
+void select_minAsserts();
+    deals with asserts for char *select_min(char str[], int num);
+    See: char *select_min(char str[], int num); for more information on how it selects characters.
+
+int findNum(char num[]);
+    This finds the num in the char, it can convert char nums to integers. Only useful if number
+    is greater then 9
+
+void idkSwapsAsserts();
+    deals with asserts for char *select_min(char str[], int num);
+    See: void idkSwaps(char *x, char *y); for more information on how it swaps characters.
+
+char *smallerThan(char *x, char *y);
+    checks which of the two characters is smaller and returns the memory position of the smaller one.
+
+void idkSwaps(char *x, char *y);
+    it swaps pointers for void str_sort(char str[]);, wasn't sure if this was wanted or not so I made it
+    just in case

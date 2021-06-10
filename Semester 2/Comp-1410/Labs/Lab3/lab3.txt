@@ -1,0 +1,65 @@
+This program can deal with any nxm matrix up to 3x3 and as low as 1x1. These numbers will not adjust automatically
+though they can be changed manually. Nothing asked for me to test anything specific, just as long as its within the
+asked sizes ie. (n >= 1 && 0 <= r && r < 3) so I didn't make it automatic. I also like defines so that's another reason
+
+void matrix_add();
+    first we grab an i, then we grab a j, then we put them together and we get the position in
+    the array we would like to change. We then take a[i][j] + b[i][j] and give that value to c[i][j]
+
+void negate_column():
+    I make a pointer because I can and apparently got confused by the question since reading it again just now made me
+    realize that the question only wanted me to use pointer arithmetic on negate_row but since it doesn't specify
+    anything for negate_column I'm not changing it. Same as matrix_add(); except no adding, instead I multiply the
+    value by -1 and only if (j+1) is equal to the value in the c variable. It does some checks or something to make sure
+    the values passed are valid but I find it stupid since I would probably have gotten in trouble if I had used
+    if (!(n >= 1 && 1 <= c && c <= 3)) which is better since this is how a human inputs matrix values.
+
+void negate_row();
+    Ignore that vary not pointer arithmetic at the start, that is for printing stuff so it is not part of the actual
+    question and is more something being done on the side for another purpose all together (I'm going to print the
+    resulting Matrix but I don't want to reconfigure my function into accepting pointers). It does some checks or
+    something to make sure the values passed are valid but I find it stupid since I would probably have gotten in
+    trouble if I had used if (!(n >= 1 && 1 <= r && r <= 3)) which is better since this is how a human inputs matrix
+    values.
+
+void Copy();
+    Copies arrays for me so that I can modify arrays without truly losing them, just paste a new copy with this
+    and you are all good.
+
+int count_digits();
+    This counts the space not required for printing stuff nice and cleanly. Isn't it annoying when you got to print a
+    matrix and the numbers are all over the place because of annoying differences in digits and - signs being
+    everywhere, well this solves it by counting the optimal amount of spaces to both add and not count.
+
+void printSpaceOfMatrix();
+    This prints the beautiful matrices that are given to it. first it is given
+    parameters (lC == longestCount, lSC == longestStartCount and a pointer because everyone loves those)
+    longestCount holds the longestCount of spaces 1 of the matrices values needs.
+    longestStartCount holds the longestStartCount of spaces 1 of the values in the first row of the Matrix need.
+    Pointer, it points to things, in this case a nested array, which I guess isn't really nested, more just perceived by
+    humans as nested.
+
+void holdAndMeasureSpace();
+    Central hub of sorts for printing matrices. It calls the count_digits() function and the printSpaceOfMatrix()
+    function and gives them the information they need to have a good day being my slaves.
+
+void checkAssert();
+    It checks my asserts by looking at each element in the array then asserting that it equals the check case.
+    I was not paying attention to the lab and was instead coding a game in python so I got no clue what I was supposed
+    to do with matrix_equals so this is my answer to the assertion problem.
+
+void buildAllTheMatrices():
+    Builds arrays for me because using my brain to think up matrices is boring. It makes random combinations between
+    -MatrixValueMaxRange and MatrixValueMaxRange (this is a defined variable you can change so giving it a value here
+    is dumb)
+    If Gibberish starts being printed in the console it is probably the ascii art I got and your console not allowing
+    for a very wide console log causing things to be moved around.
+
+void buildAsserts();
+    Builds asserts for me from what it is given it is meant to first make a copy if need be of the original matrix then
+    push through the parameters asked of it. I could have split this into multiple functions to save space but this is
+    my pointless function, and I want it even more pointless then it already is.
+
+int main();
+    This is the main function. It does nothing but call the buildAllTheMatrices(); function and say that nothing failed
+    giving data on how many tests were completed.

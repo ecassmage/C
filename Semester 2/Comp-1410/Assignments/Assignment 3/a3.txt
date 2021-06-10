@@ -1,0 +1,77 @@
+list *create_list();
+    creates a list. nothing else, literally just mallocs a list into existence.
+
+bool insert_student(int id, char name[], list *lis);
+    Inserts a new student into the list ordering it by id number from smallest to largest.
+    first creating a new list if needed. then going through the list until we find the
+    position I should be entering it. returns false if it couldn't place the node in the list
+    else it returns true.
+
+bool remove_student(int id, list *lis);
+    removes the student from the list without damaging the integrity of the linked list.
+    it reattaches the previous node and the next node in the sequence to each other then frees
+    the no longer connected memory.
+
+char *find_student(int id, list *lis);
+    finds a student based on the id given to it. will return the name if found else it will return
+    NULL.
+
+void free_list(list *lis);
+    frees the list of all students currently allocated to the linked list.
+    keeps going until it hits a NUll where it will then delete the list struct as well.
+
+void merge_lists(list *out, list *lis1, list *lis2);
+    If n is the length  of a single list then this is O(2n) since it is going over the course of two
+    lists we were told to assume would be equal to each other. This means that for ever time n goes up by 1
+    the complexity goes up by 2 as it has to go over the thing twice. This could have been made simpler but
+    I didn't think of it until recently. Basically after 1 list hits the NULL wall just attach the other list
+    and break. could be done in best case O(n) but not gonna change it.
+
+treeNode *insert_node(char word[], int value, treeNode *tree);
+    inserts a new tree node into the tree data structure. also uses TreePosition. I don't want to explain
+    everything so here is TreePosition here. Basically what it does is just go through the tree until it
+    comes across the position it shall be placed at. then returns. I could have set a part up inside this to
+    catch duplicates but I didn't want to so I am not giving it.
+
+int lookup_word(char word[], treeNode *tree);
+    looks up a word. it will then return the value associated with that word.
+    There are faster ways to do this sort of thing. just hashmap the thing by placing the word
+    with value 1 in index position 1 of a char MD array then use indexes to go through the entire thing.
+
+void free_tree(treeNode *tree);
+    frees the tree of all its nodes, so all that is left is garbage values, as the program tries to decipher
+    non sense.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/File_IO.dir/main.c.o  -o File_IO.exe -Wl,--out-implib,libFile_IO.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

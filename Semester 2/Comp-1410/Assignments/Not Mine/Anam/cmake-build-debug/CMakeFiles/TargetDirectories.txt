@@ -1,0 +1,3 @@
+/cygdrive/e/Github/C Language/Semester 2/Comp-1410/Assignments/Not Mine/Anam/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/e/Github/C Language/Semester 2/Comp-1410/Assignments/Not Mine/Anam/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/e/Github/C Language/Semester 2/Comp-1410/Assignments/Not Mine/Anam/cmake-build-debug/CMakeFiles/Anam.dir

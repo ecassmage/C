@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/e/Github/C Language/Semester 2/Comp-1410/Assignments/Assignment 3/main.c
+stdio.h
+-
+assert.h
+-
+string.h
+-
+stdlib.h
+-
+stdbool.h
+-
+math.h
+-
+

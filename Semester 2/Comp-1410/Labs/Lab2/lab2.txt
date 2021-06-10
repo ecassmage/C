@@ -1,0 +1,34 @@
+Part 1: CallStacks
+I used a debugger since I am lazy.
+
+1. fib(5) at line 5
+fib(5)
+main()
+
+2. fib(5) at line 7
+fib(2)
+fib(3)
+fib(4)
+fib(5)
+main()
+
+3. fib(5) at fib(0)
+fib(0)
+fib(2)
+fib(3)
+fib(4)
+fib(5)
+main()
+
+
+Part4:
+Well I started with order and wrote some stuff that ended up getting either a true for a > b and false for a <= b, and then swapping the pointers values sending them back throught the function to be checked.
+I then wrote the swap function to swap around pointers addresses to eachother which was a pain.
+
+Order function first checks whether a < or > then b and will then proceed accordingly either returning false for a < b and true for a > b as well as swapping a and b so that a = old_b and b = old_a.
+Swap function first swaps the pointers memory addresses then leaves.
+Other functions are mainly just for organizational purposes I think I am not very good at understanding if what I do actually makes things cleaner or not.
+For Asserting stuff I guess for order I send up the variables as references with the corresponding truth value it should be then test it. For the swap Asserts I first send the pointers up and then make a copy of them, 
+Then I send the values further up the line where those memory addresses are swapped to new pointers and sent back down the stacks where they are then tested for if they equal the old opposite memory address and if they do good,
+else bad.
+68 900 000 000

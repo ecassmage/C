@@ -1,0 +1,110 @@
+I am not in the mood to explain everything. Sorry
+
+typedef struct str;
+    A string I made. Really nice in my opinion. Trying to make it even a tenth of the string as in python
+
+typedef struct student;
+    Student. Works the same as the standard student, but I added a str attribute to it so as to test my
+    string better. It doesn't actually change anything since I still modify everything like I was supposed
+    to and instead just do a little more work on my end, don't worry.
+
+typedef struct studentBody;
+    Special list struct which holds an array pointer, Current Length and Total Length. This makes it infinitely
+    easier to work with lists, inspired by python. this will allow me to dynamically allocate memory automatically
+    without running into issues. Apparently python multiplies its lists by 10 memory number when a list runs out
+    so that's what I used.
+
+void error(char arr[]);
+    Something I dislike about C is it will not tell a runtime error without debugger, at least not that I am
+    aware of. So this is an attempt to make a pseudo error object system similar to pythons. will assert that
+    1 == 0 which is obviously false. will only be called if an if assert fails, Will send a message to explain
+    the error.
+
+void ErrorCheckStudentBody(studentBody *studentGroup);
+    Checks if an error could have happened in the student body.
+
+int CLen(studentBody *arr);
+    Returns lenC of studentBody
+
+int TLen(studentBody *arr);
+    Returns lenT of studentBody
+
+int sizeDif(studentBody *arr);
+    Returns difference between lenC and lenT of studentBody
+
+struct student * create_student(int id, char * name);
+    Creates a student with calloc which is better in my opinion to malloc since it sets values to their default.
+    callocs the name attribute and then sets name and SName to the new name as well as giving the id to the id
+    attribute, returns a pointer towards create_student. This is O(n) since it only does everything once. skipping
+    nothing and doing everything. Therefore O(n) or something.
+
+void free_student(struct student * s);
+    cleans memory of student specified. I assume this is O(1) since it only ever does one thing the prof said
+    was O(1)
+
+bool change_name(struct student * s, char * new_name);
+    changes the name of the student specified. This is set up to always be the size of the new_name so it is
+    O(n) <- n being the size of the new_name. apart from that that meh. Can't ever be the size of s.name unless
+    s.name and new_name are same size since even if s.name hold a thousand characters, if new_name is only 10
+    characters it will only reallocate 11 memory number, 10 for chars and 1 for '\0'.
+
+void printStudent(student *student);
+    Prints 1 student.
+
+void printStudents(studentBody *studentBodies);
+    Prints all students.
+
+void newStudentToRoster(studentBody *studentGroup, int id, char name[]);
+    New student will be added to the studentBody roster. Will call create_student inside this, but just organizes
+    everything needed to be done for studentBody in 1 function instead of being strewn about.
+
+int studentIndex(studentBody *studentGroup, student *studentKey);
+    gets the index of student in studentBody.
+
+void remove_student(studentBody *studentGroup, student *Student);
+    calls free_student(). will wipe memory as needed from studentBody.
+
+studentBody *makeStudentBody();
+    Creates a studentBody. About all it does
+
+void printS(str *string);
+    Prints a str.
+
+str *stringWrite(char arr[]);
+    writes a str.
+
+unsigned int stringLen(str *string);
+    returns length of string.
+
+unsigned int SLen(str *string);
+    Returns string length in a little different way.
+
+unsigned int combinedSize(str *string, char arr[]);
+    Combined size of string and new string to be added.
+
+void concatCalc(str *string, char arr[]);
+    Not meant to be here but whatever. Concats strings with new char arrays.
+    Can deal with I think infinite unique char arrays[] if you use the actualy concat function
+    instead of this which I didn't copy over to here.
+
+char *string(str *String);
+    returns the string.
+
+void newString(str *string, char replace[]);
+    makes the old string be new.
+
+void addStudentsToList(studentBody *studentSheet);
+    creates a list of students.
+
+void assertAddNewStudentsWork(studentBody *studentSheet);
+    asserts stuff for creating new students. Yes it was necessary.
+
+void assertChangingNamesWorks(studentBody *studentSheet);
+    Asserts stuff for changing student names. Fun history Facts.
+
+void freeEntireStudentBody(studentBody *studentSheet);
+    Frees the students of their confining memory bodies.
+
+int main();
+    Does main things.
+

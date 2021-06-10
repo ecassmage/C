@@ -1,0 +1,51 @@
+assertions are between lines 57-149 // Since I did get a complaint about it being annoying to find
+I still want to separate them but here are some lines to help traverse the thing.
+Also I know that most of this is unnecessary. I was bored.
+There was an issue with some of the structs. Apparently one of my 4 compilers needed to be special and so threw got annoyed that I didn't name a couple
+things the same. So needed to post a new copy incase your compiler had the same complaints.
+
+node *create_node(int item, node *left, node *right); lines 209-217
+    creates a node for part of a larger tree. could be anything from only one part of a greater tree
+    or the tree itself.
+    first line has O(1) as while it is calloc, the calloc always allocates space for 1 node
+    this will never change and so therefore its complexity, it is O(1).
+    error line is O(1) as it is just checking a single truth argument.
+    the next three lines are all O(1) since they are just giving thee lines values.
+    All in all this function is O(1) as the worst time complexity argument is O(1).
+
+void free_tree(node *root); lines 242-251
+    frees a tree by going through and de-allocating by leaves upwards.
+    This is O(n) since the larger the tree, the more nodes need to be de-allocated.
+    While free() is O(1) the complexity comes from O(1) * n nodes in the tree and so
+    therefore O(n).
+
+int height(node *root); lines 219-229
+    Checks the height of a tree by going down until it hits a leave then counting which branch is the
+    longest branch.
+    This is O(n) since it hits every node once. While it could duplicate its paths at every level, these
+    extra paths are not just being created but are just different positions in a metaphorical array.
+    if we counted the amount of times every node is went over, it would come to 1 time per node. Therefore
+    O(n)
+
+int num_leaves(node *root); lines 231-240
+    checks how many leaves exist in the tree by finding nodes with left and right being NULL.
+    This is O(n) for same reasons as height(); goes over every node once.
+
+bool sortNode(node *tree, node *Node, int num);
+    Sorts stuff.
+
+node *createTree(int item);
+    creates a tree.
+
+void sideThingThatIDid();
+    This allows you to create a node with your own hands rather easily.
+
+int main(void); lines 151-171
+    Does main stuff. ;P
+
+void printLevels(node *tree);
+    This will have the entire section of functions here.
+    This function will dynamically store the items of the tree per level to print later.
+    This function also prints the tree visually in the console. It recursively goes through
+    each node in the tree printing out the item, and adding the item to the levels array, which is
+    dynamically allocated per level. This in my opinion is a mess which I am not going to fix.

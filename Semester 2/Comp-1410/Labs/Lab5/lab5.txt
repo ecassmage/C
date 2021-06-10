@@ -1,0 +1,82 @@
+bool find_id(int id, struct student arr[], int n, char *found_name);
+    finds id inside of the student array. it is best case O(1) since should it find the id it is searching
+    for immediately or well on the first iteration it will immediately copy the name into found name and break.
+    Worst case it is O(n) since even if it can't find the element it will only go through every element in the
+    array once each, therefore it is O(n) where n is the amount of students in the array.
+
+int find_name(char * name, struct student arr[], int n, int ids[]);
+    This array finds all the students who share this name counting up the ids as it goes along. This will always
+    be O(n) since it will not exit early once it finds the name it is searching for as many people can share the
+    same name and since this array is not sorted based on names then it can't exit until it has checked every name
+    in the array. Apart from that it will only check each name once so it will always be O(n). Wipes the id array
+    before it starts adding new ids in just to make sure bad ids are not sneaking through from previous runs.
+
+void change_name(struct student * s, char * new_name);
+    This changes the name of a student to some other name. I have two systems set up. Though one is commented
+    Test1:
+        strcpy((*s).name, new_name);
+        This just copies over the name with strcpy using pointers to point towards where both arrays are being
+        stored
+    Test2:
+        for (int i = 0; i < 20; i++) s -> name[i] = *(new_name + i);
+        This uses a for loop and whatever -> is called. I don't know what it is just that I was told that I need
+        to use it so I did, not sure where it said that but who am I to care.
+
+int randomInt(int from, int to);
+    This chooses a pseudo Random number between from and to.
+
+void printStruct(struct student arrayOfStudents[]);
+    Prints the Struct. Default deactivated but you can activate it by changing the define printStructure to true
+
+void makeObject(struct student arrayOfStudents[], char nameArray[][20], int namesUsed[]);
+    makes the list of students pseudo randomly generated and is guarded against duplicate ID's but can still have
+    duplicate names.
+
+void assertFindId(struct student arrayOfStudents[]);
+    makes random asserts that in no way can have me rig them.
+    It will first create the scenario with a random number between 0 and the student body size
+    This number will be used to grab an id from the array to prove it is valid
+    This id will then run through find_id and will return true or false if it finds this id. Will always be true
+        since the id was pulled from the array so it can be found in the array
+    Next it will match the name placed in found_name with the name from the student the id was originally pulled from.
+    If these 2 names match then this was a successful assert.
+    Note: There are 40 names currently written that can be chosen from so there are plenty of names that can be messed
+    up on.
+    There are three more asserts at the bottom to test ID's that are not valid in the context of being in the student array
+
+bool SubAssertFindNames(struct student arrayOfStudents[], const int idArray[], int length, char name[]);
+    Will check every id given to it to make sure they all share the correct name. Returns true if all checked were
+    correct and all were id's were checked. If not all are correct or not all were checked will return false.
+
+void assertFindNames(struct student arrayOfStudents[], char nameArray[][20], int namesUsed[]);
+    checks to make sure that the name specified is found and that it finds the correct amount of names.
+    This uses an array which counts up the total amount of students who use each name. This array will not be accurate
+    if change_name is used to change a students name even once. The functions will still work but this array will be
+    sent out of alignment since it will not update to account for this.
+    This checks 2 things, first being if the amount of students sharing the name in question is accurate and second
+    if the students with the ids collected actually hold this name or are just lying to be more popular. This second
+    part is tested with
+    bool SubAssertFindNames(struct student arrayOfStudents[], const int idArray[], int length, char name[]);
+    which will return true if all ids are both accounted for and share the correct name.
+
+void assertChangeNames(struct student arrayOfStudents[], char nameArray[][20]);
+    changes the name of a student without affecting the id. So we are not just replacing the student element.
+    To test this we first generate a random number we will then plug into the list of names to choose the name which
+    shares its index with this number, this will then act as the new name. We then choose a random student to have
+    their name changed forcefully. This system does run the risk of choosing the same name as the student already has
+    but since this can be tested many many time, this chance will be far outweighed by a different name being picked.
+    After running change_name we then assert that the name this random student has is the same as the name randomly
+    chosen. if this is the case then the assert passes.
+
+void assertsMainFrame();
+    This function manages the other assertion function by calling the makeObject function to fill out the student array
+    and other function such as the students sharing same name array and the names array. This function essentially acts
+    as a central hub for each of the asserts to receive the information they need. I could put this inside the main
+    function but I prefer it when these sorts of things are left separate from the main function even if that choice
+    causes the main function to be left mostly empty.
+
+int main(void);
+    Seeds the randomizer, calls the assert mainframe and prints a message stating that everything went well.
+
+Sorry if the program is a little messier then my usual programs. Was busy this week so I had to rush a bit, Which
+involved not cleaning up my code.

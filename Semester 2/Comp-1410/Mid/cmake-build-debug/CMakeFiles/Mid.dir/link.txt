@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/Mid.dir/main.c.o  -o Mid.exe -Wl,--out-implib,libMid.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

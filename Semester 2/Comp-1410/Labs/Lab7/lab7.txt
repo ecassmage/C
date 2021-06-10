@@ -1,0 +1,67 @@
+typedef struct strNode;
+    struct of strNode. changed the name to make it look better, also IDE doesn't like strnode, for grammer
+    reasons and it was annoying with the warnings.
+
+strNode * create_node(char str[], strNode * next);
+    creates a new node then returns the memory address to it. It sets values as well. the code is rather
+    basic so not sure what to really say.
+
+strNode *free_node(strNode *node);
+    copies the next element in linked list, frees old head returns new head.
+
+void concat_nodes(strNode * head, char *str);
+    concatenates the linked list strings. This was somewhat confusing since I didn't really understand what
+    the lab was asking for so I just did something, hopefully it was what was wanted. Basically I calloc a
+    new char array from the function calling concat_nodes and then just pass the thing through, where it gets
+    filled with a bunch of words and spaces. Can deal with infinite sized linked lists, as long as the system
+    has the space available to deal with it. runs in O(n) since something about amortized constants which are
+    just have not quite 1 time complexity but won't change based on anything, or something like that. Basically
+    it runs through a while loop until it reaches the end of the linked list then breaks and returns so it
+    goes through all linked elements once then breaks.
+
+unsigned int sizeOf(strNode * head);
+    checks the size of all the linked strings.
+
+void createNodeAsserts();
+    asserts nodes for me.
+
+strNode *free_nodesAsserts(strNode *head, char *newWord);
+    asserts free nodes for me, connected to void createNodeAsserts();
+
+void concatNodesAsserts();
+    asserts concat_nodes for me
+
+int main(void);
+    does some random stuff. Didn't feel like cleaning it up.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

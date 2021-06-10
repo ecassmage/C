@@ -1,0 +1,60 @@
+First Things first the Assertions were 100% necessary for Science.
+
+
+-> long int choose_factorials(int n, int m);
+    choose_factorials is a dead function that does stuff but isn't used at all anymore. Was originally designed because I didn't understand what Part 1 wanted me to code 
+    so I just looked up the binomial coefficient equation and coded it. I am not citing this since it is no longer in use so no need anymore. It uses factorials but
+    can't reach the sizes that the normal choose function can so I scrapped it.
+
+-> int choose(int n, int m);
+    choose is a weird name in my opinion since it doesn;t really have anything to do with choosing at all. Besides that though choose involves simpal recursion where 
+    it will make a binary tre where one branch reduces n by 1 and the other branch will reduce both n and m by 1. The leaves are where either m == 0 or n == m and 
+    will then send back a 1 where the recursion will start collecting all the 1s that appeared. There is also a catch for if n ever becomes smaller then m in which
+    case 0 will be returned. This is only ever useful for the first stack of the choose function since m and worst afterwards will always catch on the if (n == m)
+    before n can become less then m. When an invalid input is passed to the function it will return a print statement explaining the values failed and return a 0.
+
+-> long long int factorial(long long int n);
+    Makes factorials for long int choose_factorials(int n, int m);
+
+-> void sleep(double secs);
+    Because I think why not I do stupid things like this. Irrelavent to the program basically just allows for me to cause delays to certain parts of the program 
+    to pretend like my code is actually working hard when in reality it is just slacking in a while loop
+
+-> void asserts_combos();
+    This was something I decided to do for some reason, I think I went a little crazy to decide it was a good idea to have python generate 820 assert cases for me
+    which took around 10 hours even with poth Pypy (an interpreter for python that compiles portions of it to increase speed) and multiprocessing. The code if you
+    want to verify I didn't just steal it from the internet is commented at the top of my a1.c file. I also had to remove half the assertions anyways because the
+    program was taking too long asserting the larger one and a portion were too big for int to handle. 
+    assert(choose(39, 20) == 68923264410); was the largest. 68 923 264 410 is a big number took over an hour to just generate this in python. Needed 100% trustworthy
+    asserts.
+
+-> int num_divisors_up_to_k(int n, int k);
+    Umm I first catch failure values like k < 1 and k > n so that I can cut the recursion short. I then go in and spin the function around and around until enough
+    of k has been lost to reach k == 1 where it then spins the cord of recursion to unravel the stacks adding up 1 as it goes along on only applicable divisors.
+    It is then outputted what the amount of divisors is
+    
+-> bool is_prime(int n);
+    This checks for prime numbers. First checks for anything less then 1 since they are all default bad and get a 0 with a complimentary message to boot.
+    It then uses int num_divisors_up_to_k(int n, int k); so printf("%s", num_divisors_up_to_k(int n, int k)); or something. Anyways it takes the number
+    returned and checks to see if it is 2 meaning it is divisible by only itself and 1, 1 will return 1 since while it is divisible by both itself and 1
+    it is the same number and therefore since it is divisible by everynumber between 1 and itself as well as being the multiple for all primes it isn't
+    allowed access to the prime club. anything which num_divisors_up_to_k(n, n) returns 2 for is considered a prime.
+
+-> int collatz(int n);
+    What can I say it just goes through the steps of printing stuff out until it gets to 1 then quits. As logic for this is runs parallel on the assumption
+    that eventually every number will hit a number that succeeded in getting to 1 and therefore be locked into the same pattern.
+    If number is even it returns 1 + collatz(3 * n + 1); else it returns 1 + collatz(n / 2); and will only unravel if n manages to get to 1 where it will 
+    unravel and send back the depth the recursion got to. The Collatz asserts don't print the collatz level but assert against the collatz.
+
+-> void asserting_status();
+    A centralized function for all things assertion related. It holds them so that it can be clean and it also calls the asserts_combo(); function.
+
+-> int fib(int n);
+    Umm I used this so I could look at the debugger because I am lazy and already understand recursion. Sorry.
+
+-> void scanner();
+    This is to hold a scanner function for me so that everything is cleaner this way. This is for Collatz and takes care of passes valid inputs over to it
+    as well as a way to easily quit the collatz section when bored. Hopefully...
+
+-> int main(void);
+    A main function, it does main things.
