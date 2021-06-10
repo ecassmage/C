@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/main.c
+stdio.h
+-
+unistd.h
+-
+read.h
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/read.h
+stringio.h
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/stringio.h
+stringArray.h
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/stringArray.h
+
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/read.h
+stdio.h
+-
+string.h
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/string.h
+
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/string.h
+stdlib.h
+-
+stdarg.h
+-
+
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/stringArray.h
+string.h
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/string.h
+
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/stringio.h
+string.h
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Try 2/string.h
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+stdarg.h
+-
+

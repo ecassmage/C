@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Classes/Program 1/main.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+

@@ -1,0 +1,92 @@
+
+}
+;)2df(esolcf    
+;)df(esolcf    
+;)2df ,df(ypoCekam    
+;)"w" ,]3[vgra(nepof = 2df    
+;)"r" ,]2[vgra(nepof = df    
+;)2df(esolcf    
+;)df(esolcf    
+;)2df ,df(ypoCekam    
+;)"w" ,2pmet(nepof = 2df* ELIF//    
+;)"r" ,pmet(nepof = df* ELIF//    
+;)"w" ,]2[vgra(nepof = 2df* ELIF    
+;)"r" ,]1[vgra(nepof = df* ELIF    
+;)cgra ,"n\d%"(ftnirp    
+;}"txt.2ypoCniam"{ = ][3pmet rahc    //
+;}"txt.ypoCniam"{ = ][2pmet rahc    //
+;}"c.niam"{ = ][pmet rahc    //
+{ )][vgra* rahc ,cgra tni(niam tni
+
+}
+}    
+;)2df ,)i ,gnirtSwen(tArahc )tni((ctupf        
+snoituacerP rof tsuJ // ;kaerb )FOE == )i ,gnirtSwen(tArahc( fi        
+{)--i ;i < 0 ;1-)gnirtSwen(nel = i tni dengisnu( rof    
+;))gnirtSwen(gnirts ,"n\s%"(ftnirp    
+}    
+;)c ,gnirtSwen(rahCelgniStacnoc        
+;kaerb )FOE == c( fi        
+;)df(cteg )rahc( = c rahc        
+{)1( elihw    
+;)""(gnirtS = gnirtSwen* rts    
+{)2df* ELIF ,df* ELIF(ypoCekam diov
+
+}
+;gnirts nruter    
+;'0\' = ])gnirts(nel[reniatnoCgnirts >- gnirts    
+;)rtSwen ,0 ,gnirts(etirWrts = nel >- gnirts    
+;'0\' = ]))rtSwen(nelrts([reniatnoCgnirts >- gnirts//    
+;)"yromeM etacolla ot elbanU"(RORRE )LLUN == gnirts( fi    
+;))rahc(foezis * )1 + )rtSwen(nelrts((collam )*rahc( = reniatnoCgnirts >- gnirts    
+;))rts(foezis * )1 + )rtSwen(nelrts((collam )*rts( = gnirts* rts    
+{)][rtSwen rahc(gnirtS *rts
+
+}
+;++ nel >- gnirts    
+;'0\' = ]1+)gnirts(nel[reniatnoCgnirts >- gnirts    
+;rhc = ])gnirts(nel[reniatnoCgnirts >- gnirts    
+;))rahc(foezis * )2 + )gnirts(nel( ,reniatnoCgnirts >- gnirts(collaer )*rahc( = reniatnoCgnirts >- gnirts    
+{)rhc rahc ,gnirts* rts(rahCelgniStacnoc diov
+
+}
+;reniatnoCgnirts >- gnirts nruter    
+{)gnirts* rts(gnirts* rahc
+
+}
+;)gnirts(nelrts nruter    
+{)gnirts* rahc(htgnel dengisnu
+
+}
+;nel >- gnirts nruter    
+{)gnirts* rts(nel dengisnu
+
+}
+;]xedni[reniatnoCgnirts >- gnirts nruter    
+;)"egnaRfOtuOxednI"(RORRE )nel >- gnirts => xedni( fi    
+{)xedni tni dengisnu ,gnirts* rts(tArahc rahc
+
+}
+;++c nruter    
+}    
+;++c        
+;]c[drow = ]c + tratSnoitisop[reniatnoCgnirts >- reniatnoc        
+{ )'0\' =! ]c[drow( elihw    
+;0 = c tni    
+{)][drow rahc tsnoc ,tratSnoitisop tni ,reniatnoc* rts(etirWrts tni
+
+;)gnirts* rts(nel dengisnu
+
+}
+;)0(tixe    
+;)egasseMrorre ,"n\s% :RORRE"(ftnirp    
+{)][egasseMrorre rahc(RORRE diov
+
+;rts }
+;nel tni dengisnu    
+;reniatnoCgnirts* rahc    
+{gnirts tcurts fedepyt
+
+>h.gnirts< edulcni#
+>h.bildts< edulcni#
+>h.oidts< edulcni

@@ -1,0 +1,25 @@
+Basically EOF is a constant for -1, and while unsigned char can technically collect the -1, it can't read it like that. it will read it as 255 which is not -1/.
+To fix this you can switch to char which can fix this and is what we were told to try but the better way to fix this is to change ch from a char/unsigned char
+to an int as getc returns an int.
+
+Basically since binary Seems to store negative numbers backwards relative to positive numbers ie 1 = 00000000000000000000000000000001, -1 = 11111111111111111111111111111111
+the 0 and 1 bit are flipped in role and the absolute of the negative number acts like it is 1 less then what it actually is ie -1 acts like 0.
+so when -1 is handed to unsigned char it is cut to 11111111 where it reads it like a positive binary sequence. ie (bunch of 0's)11111111
+when -1 is handed to char (which is also a signed char) it recognises that 11111111 is a negative and fills it out like a negative binary sequence. ie (bunch of 1's)11111111
+
+unsigned char ch = 11111111, but when we compare (ch != EOF) we end up doing (00000000000000000000000011111111 != 11111111111111111111111111111111); which is (255 != -1).
+char ch = 11111111, but when we compare (ch != EOF) we end up doing (11111111111111111111111111111111 != 11111111111111111111111111111111); which is (-1 != -1). This works.
+
+To be more specific why unsigned char is always True in this case it is because no matter what the only thing that will be compared is a binary sequence with 12 0's followed
+by some 1's and 0's which is then compared to 16 1's. This will then be flipped by the ! operator making (!False) into (True).
+
+It is better just to do
+    int ch;
+Instead of
+    char ch;
+or
+    unsigned char ch;
+
+Since getc returns a signed int not a signed char or an unsigned char.
+
+This took a while to figure out on the binary level since until today I didn't even realize negative binary sequences were written like this.

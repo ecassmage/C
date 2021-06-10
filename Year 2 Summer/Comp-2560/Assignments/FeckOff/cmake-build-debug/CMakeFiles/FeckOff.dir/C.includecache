@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/FeckOff/main.c
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+str.h
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/FeckOff/str.h
+
+/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/FeckOff/str.h
+

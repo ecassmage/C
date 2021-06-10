@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct string{
+    char *stringContainer;
+    unsigned int len;
+} str;
+
+void ERROR(char errorMessage[]){
+    printf("ERROR: %s\n", errorMessage);
+    exit(0);
+}
+
+unsigned len(str *string);
+
+int strWrite(str *container, int positionStart, const char word[]){
+    int c = 0;
+    while (word[c] != '\0') {
+        container -> stringContainer[positionStart + c] = word[c];
+        c++;
+    }
+    return c++;
+}
+
+char charAt(str *string, unsigned int index){
+    if (index > string -> len) {
+        printf("%d, %d\n", index, string -> len);
+        ERROR("IndexOutOfRange");
+    }
+    return string -> stringContainer[index];
+}
+
+unsigned len(str *string){
+    return string -> len;
+}
+
+unsigned length(char *string){
+    return strlen(string);
+}
+
+char *string(str *string){
+    return string -> stringContainer;
+}
+
+void concatSingleChar(str *string, char chr){
+    string -> stringContainer = (char*) realloc(string -> stringContainer, (len(string) + 2) * sizeof(char));
+    string -> stringContainer[len(string)] = chr;
+    string -> stringContainer[len(string)+1] = '\0';
+    string -> len ++;
+}
+
+str* String(char newStr[]){
+    str *string = (str*) malloc((strlen(newStr) + 1) * sizeof(str));
+    string -> stringContainer = (char*) malloc((strlen(newStr) + 1) * sizeof(char));
+    if (string == NULL) ERROR("Unable to allocate Memory");
+    //string -> stringContainer[(strlen(newStr))] = '\0';
+    string -> len = strWrite(string, 0, newStr);
+    string -> stringContainer[len(string)] = '\0';
+    return string;
+}
+
+void makeCopy(FILE *fd, FILE *fd2){
+    str *newString = String("");
+    while (1){
+        char c = (char) getc(fd);
+        if (c == EOF) break;
+        concatSingleChar(newString, c);
+    }
+    printf("%s\n", string(newString));
+    for (int i = len(newString)-1; 0 <= i; i--){
+        if (charAt(newString, i) == EOF) break; // Just for Precautions
+        fputc((int) charAt(newString, i), fd2);
+    }
+}
+
+int main(int argc, char *argv[]) {
+//    char temp[] = {"main.c"};
+//    char temp2[] = {"mainCopy.txt"};
+//    char temp3[] = {"mainCopy2.txt"};
+    FILE *fd = fopen(argv[1], "r");
+    FILE *fd2 = fopen(argv[2], "w");
+    //FILE *fd = fopen(temp, "r");
+    //FILE *fd2 = fopen(temp2, "w");
+    makeCopy(fd, fd2);
+    fclose(fd);
+    fclose(fd2);
+    fd = fopen(argv[2], "r");
+    fd2 = fopen(argv[3], "w");
+    makeCopy(fd, fd2);
+    fclose(fd);
+    fclose(fd2);
+}

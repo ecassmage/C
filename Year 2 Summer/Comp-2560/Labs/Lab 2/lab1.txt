@@ -1,0 +1,5 @@
+I am not sure what this program is supposed to do. I assume you want it to, when run read argv[1], take what is in it and then write it to argv[2] whatever that is and if argv[2] does not exist
+create the file.
+If this assumption is correct then all that needs to happen is
+        while((n1=read(fd1, buffer, 512) > 0)) needs to become
+        while((n1=read(fd1, buffer, 1) > 0)) since 512 seemed to write char 0 then skip 512 chars before writing 512 down.
