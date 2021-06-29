@@ -10,7 +10,7 @@
  * </p>
  *
  * @author Evan Morrison
- * @version 1.3.0
+ * @version 1.3.3
  * @since 1.1.0
  */
 
@@ -97,9 +97,10 @@ int writeStrAtStd(FILE *fdStand2, int index, str *string){
 str *readToStrSys(int fd){
     lseek(fd, 0, SEEK_SET);
     char buffer[1];
+    long ch;
     str *temp = String("");
-    while (read(fd, buffer, 1) > 0){
-        if (buffer[0] == '\n') break;
+    while ((ch = read(fd, buffer, 1)) > 0){
+        if (ch == 0) break;
         concatSingleChar(temp, buffer[0]);
     }
     return temp;
@@ -110,7 +111,7 @@ str *readToStrStd(FILE *fd){
     char buffer[1];
     str *temp = String("");
     while (fread(buffer, 1, 1, fd) > 0){
-        if (buffer[0] == '\n') break;
+        if (buffer[0] == EOF) break;
         concatSingleChar(temp, buffer[0]);
     }
     return temp;

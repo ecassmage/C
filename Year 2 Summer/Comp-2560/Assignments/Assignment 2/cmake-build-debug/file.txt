@@ -1,0 +1,4 @@
+Study the Linux/Unix command “cat” to understand its basic functionality.
+Then study the attached source code “mycat.c” which implements the “cat”
+command using standard I/O functions. Rewrite the attached “mycat.c”
+program using System I/O functions (read, write, open, close).

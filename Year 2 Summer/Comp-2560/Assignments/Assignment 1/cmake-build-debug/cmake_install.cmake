@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1
+# Install script for directory: /cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

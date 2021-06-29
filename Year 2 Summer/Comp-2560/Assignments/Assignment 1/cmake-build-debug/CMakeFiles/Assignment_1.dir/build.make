@@ -63,10 +63,10 @@ RM = /cygdrive/c/Users/evanm/AppData/Local/JetBrains/CLion2020.3/cygwin_cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1"
+CMAKE_SOURCE_DIR = "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Assignment_1.dir/depend.make
@@ -79,28 +79,163 @@ include CMakeFiles/Assignment_1.dir/flags.make
 
 CMakeFiles/Assignment_1.dir/main.c.o: CMakeFiles/Assignment_1.dir/flags.make
 CMakeFiles/Assignment_1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Assignment_1.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/main.c.o   -c "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Assignment_1.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/main.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/main.c"
 
 CMakeFiles/Assignment_1.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/main.c" > CMakeFiles/Assignment_1.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/main.c" > CMakeFiles/Assignment_1.dir/main.c.i
 
 CMakeFiles/Assignment_1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/main.c" -o CMakeFiles/Assignment_1.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/main.c" -o CMakeFiles/Assignment_1.dir/main.c.s
+
+CMakeFiles/Assignment_1.dir/Question1.c.o: CMakeFiles/Assignment_1.dir/flags.make
+CMakeFiles/Assignment_1.dir/Question1.c.o: ../Question1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Assignment_1.dir/Question1.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/Question1.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question1.c"
+
+CMakeFiles/Assignment_1.dir/Question1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/Question1.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question1.c" > CMakeFiles/Assignment_1.dir/Question1.c.i
+
+CMakeFiles/Assignment_1.dir/Question1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/Question1.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question1.c" -o CMakeFiles/Assignment_1.dir/Question1.c.s
+
+CMakeFiles/Assignment_1.dir/writer.c.o: CMakeFiles/Assignment_1.dir/flags.make
+CMakeFiles/Assignment_1.dir/writer.c.o: ../writer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Assignment_1.dir/writer.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/writer.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/writer.c"
+
+CMakeFiles/Assignment_1.dir/writer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/writer.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/writer.c" > CMakeFiles/Assignment_1.dir/writer.c.i
+
+CMakeFiles/Assignment_1.dir/writer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/writer.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/writer.c" -o CMakeFiles/Assignment_1.dir/writer.c.s
+
+CMakeFiles/Assignment_1.dir/Q3stdwriter.c.o: CMakeFiles/Assignment_1.dir/flags.make
+CMakeFiles/Assignment_1.dir/Q3stdwriter.c.o: ../Q3stdwriter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Assignment_1.dir/Q3stdwriter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/Q3stdwriter.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Q3stdwriter.c"
+
+CMakeFiles/Assignment_1.dir/Q3stdwriter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/Q3stdwriter.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Q3stdwriter.c" > CMakeFiles/Assignment_1.dir/Q3stdwriter.c.i
+
+CMakeFiles/Assignment_1.dir/Q3stdwriter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/Q3stdwriter.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Q3stdwriter.c" -o CMakeFiles/Assignment_1.dir/Q3stdwriter.c.s
+
+CMakeFiles/Assignment_1.dir/Question4.c.o: CMakeFiles/Assignment_1.dir/flags.make
+CMakeFiles/Assignment_1.dir/Question4.c.o: ../Question4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Assignment_1.dir/Question4.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/Question4.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question4.c"
+
+CMakeFiles/Assignment_1.dir/Question4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/Question4.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question4.c" > CMakeFiles/Assignment_1.dir/Question4.c.i
+
+CMakeFiles/Assignment_1.dir/Question4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/Question4.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question4.c" -o CMakeFiles/Assignment_1.dir/Question4.c.s
+
+CMakeFiles/Assignment_1.dir/Question5.c.o: CMakeFiles/Assignment_1.dir/flags.make
+CMakeFiles/Assignment_1.dir/Question5.c.o: ../Question5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Assignment_1.dir/Question5.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/Question5.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question5.c"
+
+CMakeFiles/Assignment_1.dir/Question5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/Question5.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question5.c" > CMakeFiles/Assignment_1.dir/Question5.c.i
+
+CMakeFiles/Assignment_1.dir/Question5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/Question5.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question5.c" -o CMakeFiles/Assignment_1.dir/Question5.c.s
+
+CMakeFiles/Assignment_1.dir/emq6.c.o: CMakeFiles/Assignment_1.dir/flags.make
+CMakeFiles/Assignment_1.dir/emq6.c.o: ../emq6.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Assignment_1.dir/emq6.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/emq6.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/emq6.c"
+
+CMakeFiles/Assignment_1.dir/emq6.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/emq6.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/emq6.c" > CMakeFiles/Assignment_1.dir/emq6.c.i
+
+CMakeFiles/Assignment_1.dir/emq6.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/emq6.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/emq6.c" -o CMakeFiles/Assignment_1.dir/emq6.c.s
+
+CMakeFiles/Assignment_1.dir/Question8.c.o: CMakeFiles/Assignment_1.dir/flags.make
+CMakeFiles/Assignment_1.dir/Question8.c.o: ../Question8.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Assignment_1.dir/Question8.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/Question8.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question8.c"
+
+CMakeFiles/Assignment_1.dir/Question8.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/Question8.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question8.c" > CMakeFiles/Assignment_1.dir/Question8.c.i
+
+CMakeFiles/Assignment_1.dir/Question8.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/Question8.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question8.c" -o CMakeFiles/Assignment_1.dir/Question8.c.s
+
+CMakeFiles/Assignment_1.dir/emq7.c.o: CMakeFiles/Assignment_1.dir/flags.make
+CMakeFiles/Assignment_1.dir/emq7.c.o: ../emq7.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Assignment_1.dir/emq7.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/emq7.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/emq7.c"
+
+CMakeFiles/Assignment_1.dir/emq7.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/emq7.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/emq7.c" > CMakeFiles/Assignment_1.dir/emq7.c.i
+
+CMakeFiles/Assignment_1.dir/emq7.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/emq7.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/emq7.c" -o CMakeFiles/Assignment_1.dir/emq7.c.s
+
+CMakeFiles/Assignment_1.dir/noHole.c.o: CMakeFiles/Assignment_1.dir/flags.make
+CMakeFiles/Assignment_1.dir/noHole.c.o: ../noHole.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Assignment_1.dir/noHole.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment_1.dir/noHole.c.o   -c "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/noHole.c"
+
+CMakeFiles/Assignment_1.dir/noHole.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment_1.dir/noHole.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/noHole.c" > CMakeFiles/Assignment_1.dir/noHole.c.i
+
+CMakeFiles/Assignment_1.dir/noHole.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment_1.dir/noHole.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/noHole.c" -o CMakeFiles/Assignment_1.dir/noHole.c.s
 
 # Object files for target Assignment_1
 Assignment_1_OBJECTS = \
-"CMakeFiles/Assignment_1.dir/main.c.o"
+"CMakeFiles/Assignment_1.dir/main.c.o" \
+"CMakeFiles/Assignment_1.dir/Question1.c.o" \
+"CMakeFiles/Assignment_1.dir/writer.c.o" \
+"CMakeFiles/Assignment_1.dir/Q3stdwriter.c.o" \
+"CMakeFiles/Assignment_1.dir/Question4.c.o" \
+"CMakeFiles/Assignment_1.dir/Question5.c.o" \
+"CMakeFiles/Assignment_1.dir/emq6.c.o" \
+"CMakeFiles/Assignment_1.dir/Question8.c.o" \
+"CMakeFiles/Assignment_1.dir/emq7.c.o" \
+"CMakeFiles/Assignment_1.dir/noHole.c.o"
 
 # External object files for target Assignment_1
 Assignment_1_EXTERNAL_OBJECTS =
 
 Assignment_1.exe: CMakeFiles/Assignment_1.dir/main.c.o
+Assignment_1.exe: CMakeFiles/Assignment_1.dir/Question1.c.o
+Assignment_1.exe: CMakeFiles/Assignment_1.dir/writer.c.o
+Assignment_1.exe: CMakeFiles/Assignment_1.dir/Q3stdwriter.c.o
+Assignment_1.exe: CMakeFiles/Assignment_1.dir/Question4.c.o
+Assignment_1.exe: CMakeFiles/Assignment_1.dir/Question5.c.o
+Assignment_1.exe: CMakeFiles/Assignment_1.dir/emq6.c.o
+Assignment_1.exe: CMakeFiles/Assignment_1.dir/Question8.c.o
+Assignment_1.exe: CMakeFiles/Assignment_1.dir/emq7.c.o
+Assignment_1.exe: CMakeFiles/Assignment_1.dir/noHole.c.o
 Assignment_1.exe: CMakeFiles/Assignment_1.dir/build.make
 Assignment_1.exe: CMakeFiles/Assignment_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Assignment_1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable Assignment_1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Assignment_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -113,6 +248,6 @@ CMakeFiles/Assignment_1.dir/clean:
 .PHONY : CMakeFiles/Assignment_1.dir/clean
 
 CMakeFiles/Assignment_1.dir/depend:
-	cd "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1" "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1" "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug" "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug" "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles/Assignment_1.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1" "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1" "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug" "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug" "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles/Assignment_1.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Assignment_1.dir/depend
 

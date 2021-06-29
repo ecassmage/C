@@ -68,10 +68,10 @@ RM = /cygdrive/c/Users/evanm/AppData/Local/JetBrains/CLion2020.3/cygwin_cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1"
+CMAKE_SOURCE_DIR = "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -143,6 +143,195 @@ Assignment_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/build
 .PHONY : Assignment_1/fast
 
+Q3stdwriter.o: Q3stdwriter.c.o
+
+.PHONY : Q3stdwriter.o
+
+# target to build an object file
+Q3stdwriter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Q3stdwriter.c.o
+.PHONY : Q3stdwriter.c.o
+
+Q3stdwriter.i: Q3stdwriter.c.i
+
+.PHONY : Q3stdwriter.i
+
+# target to preprocess a source file
+Q3stdwriter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Q3stdwriter.c.i
+.PHONY : Q3stdwriter.c.i
+
+Q3stdwriter.s: Q3stdwriter.c.s
+
+.PHONY : Q3stdwriter.s
+
+# target to generate assembly for a file
+Q3stdwriter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Q3stdwriter.c.s
+.PHONY : Q3stdwriter.c.s
+
+Question1.o: Question1.c.o
+
+.PHONY : Question1.o
+
+# target to build an object file
+Question1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question1.c.o
+.PHONY : Question1.c.o
+
+Question1.i: Question1.c.i
+
+.PHONY : Question1.i
+
+# target to preprocess a source file
+Question1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question1.c.i
+.PHONY : Question1.c.i
+
+Question1.s: Question1.c.s
+
+.PHONY : Question1.s
+
+# target to generate assembly for a file
+Question1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question1.c.s
+.PHONY : Question1.c.s
+
+Question4.o: Question4.c.o
+
+.PHONY : Question4.o
+
+# target to build an object file
+Question4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question4.c.o
+.PHONY : Question4.c.o
+
+Question4.i: Question4.c.i
+
+.PHONY : Question4.i
+
+# target to preprocess a source file
+Question4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question4.c.i
+.PHONY : Question4.c.i
+
+Question4.s: Question4.c.s
+
+.PHONY : Question4.s
+
+# target to generate assembly for a file
+Question4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question4.c.s
+.PHONY : Question4.c.s
+
+Question5.o: Question5.c.o
+
+.PHONY : Question5.o
+
+# target to build an object file
+Question5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question5.c.o
+.PHONY : Question5.c.o
+
+Question5.i: Question5.c.i
+
+.PHONY : Question5.i
+
+# target to preprocess a source file
+Question5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question5.c.i
+.PHONY : Question5.c.i
+
+Question5.s: Question5.c.s
+
+.PHONY : Question5.s
+
+# target to generate assembly for a file
+Question5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question5.c.s
+.PHONY : Question5.c.s
+
+Question8.o: Question8.c.o
+
+.PHONY : Question8.o
+
+# target to build an object file
+Question8.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question8.c.o
+.PHONY : Question8.c.o
+
+Question8.i: Question8.c.i
+
+.PHONY : Question8.i
+
+# target to preprocess a source file
+Question8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question8.c.i
+.PHONY : Question8.c.i
+
+Question8.s: Question8.c.s
+
+.PHONY : Question8.s
+
+# target to generate assembly for a file
+Question8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/Question8.c.s
+.PHONY : Question8.c.s
+
+emq6.o: emq6.c.o
+
+.PHONY : emq6.o
+
+# target to build an object file
+emq6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/emq6.c.o
+.PHONY : emq6.c.o
+
+emq6.i: emq6.c.i
+
+.PHONY : emq6.i
+
+# target to preprocess a source file
+emq6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/emq6.c.i
+.PHONY : emq6.c.i
+
+emq6.s: emq6.c.s
+
+.PHONY : emq6.s
+
+# target to generate assembly for a file
+emq6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/emq6.c.s
+.PHONY : emq6.c.s
+
+emq7.o: emq7.c.o
+
+.PHONY : emq7.o
+
+# target to build an object file
+emq7.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/emq7.c.o
+.PHONY : emq7.c.o
+
+emq7.i: emq7.c.i
+
+.PHONY : emq7.i
+
+# target to preprocess a source file
+emq7.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/emq7.c.i
+.PHONY : emq7.c.i
+
+emq7.s: emq7.c.s
+
+.PHONY : emq7.s
+
+# target to generate assembly for a file
+emq7.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/emq7.c.s
+.PHONY : emq7.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -170,6 +359,60 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/main.c.s
 .PHONY : main.c.s
 
+noHole.o: noHole.c.o
+
+.PHONY : noHole.o
+
+# target to build an object file
+noHole.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/noHole.c.o
+.PHONY : noHole.c.o
+
+noHole.i: noHole.c.i
+
+.PHONY : noHole.i
+
+# target to preprocess a source file
+noHole.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/noHole.c.i
+.PHONY : noHole.c.i
+
+noHole.s: noHole.c.s
+
+.PHONY : noHole.s
+
+# target to generate assembly for a file
+noHole.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/noHole.c.s
+.PHONY : noHole.c.s
+
+writer.o: writer.c.o
+
+.PHONY : writer.o
+
+# target to build an object file
+writer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/writer.c.o
+.PHONY : writer.c.o
+
+writer.i: writer.c.i
+
+.PHONY : writer.i
+
+# target to preprocess a source file
+writer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/writer.c.i
+.PHONY : writer.c.i
+
+writer.s: writer.c.s
+
+.PHONY : writer.s
+
+# target to generate assembly for a file
+writer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Assignment_1.dir/build.make CMakeFiles/Assignment_1.dir/writer.c.s
+.PHONY : writer.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +422,36 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Assignment_1"
+	@echo "... Q3stdwriter.o"
+	@echo "... Q3stdwriter.i"
+	@echo "... Q3stdwriter.s"
+	@echo "... Question1.o"
+	@echo "... Question1.i"
+	@echo "... Question1.s"
+	@echo "... Question4.o"
+	@echo "... Question4.i"
+	@echo "... Question4.s"
+	@echo "... Question5.o"
+	@echo "... Question5.i"
+	@echo "... Question5.s"
+	@echo "... Question8.o"
+	@echo "... Question8.i"
+	@echo "... Question8.s"
+	@echo "... emq6.o"
+	@echo "... emq6.i"
+	@echo "... emq6.s"
+	@echo "... emq7.o"
+	@echo "... emq7.i"
+	@echo "... emq7.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... noHole.o"
+	@echo "... noHole.i"
+	@echo "... noHole.s"
+	@echo "... writer.o"
+	@echo "... writer.i"
+	@echo "... writer.s"
 .PHONY : help
 
 

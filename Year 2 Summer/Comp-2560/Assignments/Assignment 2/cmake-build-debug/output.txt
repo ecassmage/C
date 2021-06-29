@@ -1,0 +1,80 @@
+the submitted files.
+program and submit the script file and timing file. Please properly name all
+command with timing option to record you compiling and running your
+For all questions, you need to submit your source code. Also use the script
+Submission Requirements
+see how to use sscanf())
+statement” (discussed in class with a sample code, or google online to
+You can use the returned value of sscanf() for detecting a “Wrong
+All reads/writes must be done using read()/write()
+Important:
+6. The parent goes back to 1.
+or “Wrong operator”, respectively.
+is 50, 100 or 200, writes “Wrong statement”, “Division by zero”
+value using bit-manipulation macros discussed in class and if it
+5. Once the child terminates, the parent checks the returned status
+– calls exit(0)
+– writes the output buffer to the screen
+n2 = result,
+– uses sprint() to create an output buffer consisting of n1 op
+– otherwise, it performs the appropriate arithmetic operation,
+– in case of a wrong op the child calls exit(200)
+– in case of division by zero, the child calls exit(100)
+– in case of wrong statement, the child calls exit(50)
+– uses sscanf() to convert the input line into an integer, a character and an integer, respectively.
+– writes the message “I am a child working for my parent”
+4. The child, through childFunction(char *line),
+2
+never returns.
+– the child process calls the function childFunction(char *) and
+operation, waiting” then calls wait() to wait for its child.
+– the parent writes the message “Created a child to make your
+3. Forks and
+2. Reads the whole input line,
+132 > ”,
+1. Writes the message “Enter an arithmetic statement, e.g., 34 +
+Gets in an infinite loop then
+Prompts the message ”This program makes simple arithmetics”,
+the sequential steps, given below.
+Using Unix system calls, fork(), wait(), read() and write(), write a C program for integer- basic Arithmetics (+, - , *, /). Your program should follow
+Question 5
+Redo Question 4 above but this time uses standard I/O function.
+Question 4
+example, say, 30 inputs files (file1, . . . , file30) as well.
+3 input files (file1, file2, and file3), and your program should also work, for
+work on any number of input files. The example usage given above shows
+combinedfile in terminal window before it terminates. Your program should
+file2 followed by files3. Your program should display the content of the
+newly created file whose contents is the concatenation of file1 followed by
+In the above, file1 to file3 are existing text files, and combinedfile is a
+shell prompt >./append file1 file2 file3 combinedfile
+Assume we call this program “append”, the way to use it is as follows:
+could still use the “printf(...)” function to display information to terminal.)
+files into a single file and display the content of the combined file. (Note you
+Using system I/O functions to write a C program to combine multiple text
+Question 3
+1
+Hello
+I am happy to see you
+Output file:
+I am happy to see you
+Hello
+Input file:
+Example:
+reverseFile inputFileName outputFileName
+Call model:
+the output file name.
+Note: your program should have two arguments, the input file name and
+and so on.
+first line becomes last, the second line becomes the one before the last one
+write a C program to reverse the order of the lines in a text file. That is the
+Using only standard I/O functions (like fopen(), fseek(), ftell(), fgets(), etc.),
+Question 2
+program using System I/O functions (read, write, open, close).
+command using standard I/O functions. Rewrite the attached “mycat.c”
+Then study the attached source code “mycat.c” which implements the “cat”
+Study the Linux/Unix command “cat” to understand its basic functionality.
+Question 1
+Due: 11: 59 PM, Jun. 28
+©All Rights Reserved by Dan Wu.
+COMP 2560 Summer 2021—Assignment 2

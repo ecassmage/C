@@ -11,7 +11,7 @@
  * </p>
  *
  * @author Evan Morrison
- * @version 1.3.0
+ * @version 1.3.3
  * @since 1.2.0
  */
 

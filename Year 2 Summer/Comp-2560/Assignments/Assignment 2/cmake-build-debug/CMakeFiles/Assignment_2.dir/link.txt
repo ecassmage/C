@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/Assignment_2.dir/emq5.c.o CMakeFiles/Assignment_2.dir/emq4.c.o CMakeFiles/Assignment_2.dir/emappend.c.o CMakeFiles/Assignment_2.dir/emreverseFile.c.o CMakeFiles/Assignment_2.dir/emmycat.c.o  -o Assignment_2.exe -Wl,--out-implib,libAssignment_2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

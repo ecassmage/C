@@ -47,7 +47,7 @@ void arrayTesting(){
 
 
 int main(int argc, char *argv[]) {
-    /*
+
     int fd = open("Checkers.txt", O_CREAT|O_WRONLY|O_TRUNC, 0700);
     str *newString = String("This is a Message of problems with compilers, They suck.");
     writeStrSys(fd, newString);
@@ -69,6 +69,6 @@ int main(int argc, char *argv[]) {
     str *string = String("");
     scanStr("%s", string);
     printStr("This is Output: %s\n", string);
-    */
+
     arrayTesting();
 }

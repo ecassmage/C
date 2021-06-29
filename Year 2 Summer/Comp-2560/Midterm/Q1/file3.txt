@@ -1,0 +1,74 @@
+.xuniL no       
+timil reppu eht rof SETON ees ;denifed-noitatnemelpmi si tluser       
+eht ,XAM_EZISS naht retaerg si tnuoc fi ,1.XISOP ot gnidroccA       
+
+.gnimrofnoc XISOP era smetsyselif       
+lla ton taht etoN  .atad wen eht nruter lliw denruter sah )(etirw       
+a retfa rucco ot devorp eb nac taht )2(daer a taht seriuqer XISOP       
+
+.pets cimota na sa demrofrep       
+era noitarepo etirw eht dna tesffo elif eht fo tnemtsujda ehT       
+.gnitirw erofeb elif eht fo dne eht ot tes tsrif si tesffo elif       
+eht ,DNEPPA_O htiw de)2(nepo saw elif eht fI  .nettirw yllautca       
+setyb fo rebmun eht yb detnemercni si tesffo elif eht dna ,tesffo       
+elif eht ta ecalp sekat gnitirw )elif raluger a ,elpmaxe rof       
+,deilppa eb yam )2(keesl hcihw ot eno ,.e.i( elif elbakees a roF       
+
+).)7(epip osla eeS(  .setyb tnuoc naht ssel nettirw gnivah retfa       
+reldnah langis a yb detpurretni saw llac eht ro ,))2(timilrtes       
+ees( deretnuocne si timil ecruoser EZISF_TIMILR eht ro ,muidem       
+lacisyhp gniylrednu eht no ecaps tneiciffusni si ereht ,elpmaxe       
+rof ,fi tnuoc naht ssel eb yam nettirw setyb fo rebmun ehT       
+
+.df rotpircsed elif eht yb ot derrefer elif eht ot       
+fub ta gnitrats reffub eht morf setyb tnuoc ot pu setirw )(etirw
+.stroppus       
+ti snoitpo eht tuoba sliated rof noitatnemucod s'llehs ruoy ot refer esaelP  .ereh debircsed noisrev eht sedesrepus yllausu hcihw ,ftnirp fo noisrev nwo sti evah yam llehs  ruoy  :ETON       
+
+.deldnah era shtdiw elbairaV  .tsrif epyt reporp ot detrevnoc sTNEMUGRA htiw ,scGgEefXxuoid fo eno htiw gnidne snoitacificeps tamrof C lla dna       
+
+.xatnys ''$ XISOP desoporp eht htiw sretcarahc elbatnirp-non gnipacse ,tupni llehs sa desuer eb nac taht tamrof a ni detnirp si TNEMUGRA     q%       
+
+NNN0\ ro 0\ mrof eht fo era sepacse latco taht tpecxe ,deterpretni sepacse '\' htiw gnirts a sa TNEMUGRA     b%       
+
+% elgnis a     %%       
+
+)stigid 8( HHHHHHHH eulav xeh htiw retcarahc edocinU              
+HHHHHHHHU\       
+
+)stigid 4( HHHH eulav xeh htiw retcarahc )64601 CEI/OSI( edocinU HHHHu\       
+
+)stigid 2 ot 1( HH eulav lamicedaxeh htiw etyb   HHx\       
+
+)stigid 3 ot 1( NNN eulav latco htiw etyb   NNN\       
+
+bat lacitrev     v\       
+
+bat latnoziroh     t\       
+
+nruter egairrac     r\       
+
+enil wen     n\       
+
+deef mrof     f\       
+
+epacse     e\       
+
+tuptuo rehtruf on ecudorp     c\       
+
+ecapskcab     b\       
+
+)LEB( trela     a\       
+
+hsalskcab     \\       
+
+etouq elbuod     "\       
+
+:era secneuqes deterpretnI  .ftnirp C ni sa tuptuo eht slortnoc TAMROF       
+
+tixe dna noitamrofni noisrev tuptuo              
+noisrev--       
+
+tixe dna pleh siht yalpsid pleh--       
+
+:NOITPO ot gnidrocca etucexe ro ,TAMROF ot gnidrocca )s(TNEMUGRA tnirP

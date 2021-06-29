@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question8.c
+apue.h
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/apue.h
+fcntl.h
+-
+
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/apue.h
+sys/types.h
+-
+sys/stat.h
+-
+sys/termios.h
+-
+sys/ioctl.h
+-
+stdio.h
+-
+stdlib.h
+-
+stddef.h
+-
+string.h
+-
+unistd.h
+-
+signal.h
+-
+

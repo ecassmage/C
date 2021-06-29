@@ -1,0 +1,25 @@
+First we Write the line before fork, my pid is %d Just to make sure we all know who the Parent is in this Relationship
+
+Next We Have a Child. This Child Grows up Nice and Strong and after Their Parent has another child gets Jealous and
+Has a Child of their own. This Continues on Again and Again until we have 7 Children + 1 Parent
+Basically as Long as nothing is interrupted prematurely, The number of Parents and Children That will have existed
+will always Equal 2^(Number of forks)
+ie:
+0 Forks = 1 Process
+1 Fork  = 2 Process
+2 Forks = 4 Process
+3 Forks = 8 Process
+4 Forks = 16 Process
+5 Forks = 32 Process
+
+
+      P
+    / | \
+   C  C  C
+ / |  |
+C  C  C
+|
+C
+
+Family Tree Of Sorts I guess. Not Sure if This will Mess up upon upload or something But if it does
+Just Know it was 100% correct, no need to double check it.

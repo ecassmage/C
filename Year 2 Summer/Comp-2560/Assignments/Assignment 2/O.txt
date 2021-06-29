@@ -1,0 +1,324 @@
+COMP 2560 Summer 2021—Assignment 2
+©All Rights Reserved by Dan Wu.
+Due: 11: 59 PM, Jun. 28
+Question 1
+Study the Linux/Unix command “cat” to understand its basic functionality.
+Then study the attached source code “mycat.c” which implements the “cat”
+command using standard I/O functions. Rewrite the attached “mycat.c”
+program using System I/O functions (read, write, open, close).
+Question 2
+Using only standard I/O functions (like fopen(), fseek(), ftell(), fgets(), etc.),
+write a C program to reverse the order of the lines in a text file. That is the
+first line becomes last, the second line becomes the one before the last one
+and so on.
+Note: your program should have two arguments, the input file name and
+the output file name.
+Call model:
+reverseFile inputFileName outputFileName
+Example:
+Input file:
+Hello
+I am happy to see you
+Output file:
+I am happy to see you
+Hello
+1
+Question 3
+Using system I/O functions to write a C program to combine multiple text
+files into a single file and display the content of the combined file. (Note you
+could still use the “printf(...)” function to display information to terminal.)
+Assume we call this program “append”, the way to use it is as follows:
+shell prompt >./append file1 file2 file3 combinedfile
+In the above, file1 to file3 are existing text files, and combinedfile is a
+newly created file whose contents is the concatenation of file1 followed by
+file2 followed by files3. Your program should display the content of the
+combinedfile in terminal window before it terminates. Your program should
+work on any number of input files. The example usage given above shows
+3 input files (file1, file2, and file3), and your program should also work, for
+example, say, 30 inputs files (file1, . . . , file30) as well.
+Question 4
+Redo Question 4 above but this time uses standard I/O function.
+Question 5
+Using Unix system calls, fork(), wait(), read() and write(), write a C program for integer- basic Arithmetics (+, - , *, /). Your program should follow
+the sequential steps, given below.
+Prompts the message ”This program makes simple arithmetics”,
+Gets in an infinite loop then
+1. Writes the message “Enter an arithmetic statement, e.g., 34 +
+132 > ”,
+2. Reads the whole input line,
+3. Forks and
+– the parent writes the message “Created a child to make your
+operation, waiting” then calls wait() to wait for its child.
+– the child process calls the function childFunction(char *) and
+never returns.
+2
+4. The child, through childFunction(char *line),
+– writes the message “I am a child working for my parent”
+– uses sscanf() to convert the input line into an integer, a character and an integer, respectively.
+– in case of wrong statement, the child calls exit(50)
+– in case of division by zero, the child calls exit(100)
+– in case of a wrong op the child calls exit(200)
+– otherwise, it performs the appropriate arithmetic operation,
+– uses sprint() to create an output buffer consisting of n1 op
+n2 = result,
+– writes the output buffer to the screen
+– calls exit(0)
+5. Once the child terminates, the parent checks the returned status
+value using bit-manipulation macros discussed in class and if it
+is 50, 100 or 200, writes “Wrong statement”, “Division by zero”
+or “Wrong operator”, respectively.
+6. The parent goes back to 1.
+Important:
+All reads/writes must be done using read()/write()
+You can use the returned value of sscanf() for detecting a “Wrong
+statement” (discussed in class with a sample code, or google online to
+see how to use sscanf())
+Submission Requirements
+For all questions, you need to submit your source code. Also use the script
+command with timing option to record you compiling and running your
+program and submit the script file and timing file. Please properly name all
+the submitted files.
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdarg.h>
+
+/**
+ * Holds stuff for arrays. Yippee No more having to send the size of an array. OOP is Better.
+ */
+typedef struct overheadString{
+    unsigned int lenArr;
+} overheadString;
+
+/**
+ * Structure for str holds information like the char array and length of string. as well as some array information.
+ */
+typedef struct str{
+    char *stringContainer;
+    unsigned int len;
+    overheadString *lenFo;
+} str;
+
+void ERROR(char errorMessage[]){
+    printf("ERROR: %s\n", errorMessage);
+    exit(0);
+}
+
+/**
+ * Writes string, Would be Private if I New how to make it Private.
+ * @param container Takes a str which which contain the character array
+ * @param positionStart Takes an int for index position inside str which will begin writing str.
+ * @param word takes char array for word wanted to be added.
+ * @return returns int for where ptr inside str finished at.
+ */
+int strWrite(str *container, int positionStart, const char word[]);
+
+/**
+ * Writes a String to str structure.
+ * <p>
+ *  This Writes a String taking an input of a char array before then writing the information needed to a str structure.
+ * <\p>
+ * @param newStr takes a char array for the str.
+ * @return returns a malloc written string.
+ */
+str* String(char newStr[]);
+
+/**
+ * returns length of string
+ * @param string takes str of what you want length of.
+ * @return returns length of @param string.
+ */
+unsigned len(str *string);
+
+/**
+ * concatenates a single char array to a string
+ * @param string takes a str to take @param arr
+ * @param arr takes a char array to concatenate
+ */
+void concatSingle(str *string, char arr[]);
+
+/**
+ * concatenates a single char to a string
+ * @param string takes a str to take @param chr
+ * @param chr takes a char to concatenate
+ */
+void concatSingleChar(str *string, char chr);
+
+/**
+ * Gets the char array of a str.
+ * @param string takes a str.
+ * @return returns @param string char array.
+ */
+char *getStr(str *string);
+
+/**
+ * deallocates str structure. for cleaning if needed.
+ * @param string does stringy things. Maybe even Stringledee dee Things.
+ */
+void deleteStr(str *string);
+
+/**
+ * Reads a file to a string structure. Funny Times ahead. Forgot to write this so this is what you get on my not so formal explanation.
+ * @param fd takes an int for location on system i/o file. Takes a file opened with reading capabilities.
+ * @return Returns a String written to the heap.
+ */
+str *readToStrSys(int fd);
+
+/**
+ * Will print a string / array of strings to the console.
+ * <p>
+ *      %s: for String
+ *      %a: for Array of Strings
+ *  For this Implementation %a does not function to save space but it does work trust me.
+ * </p>
+ * @param message
+ * @param ...
+ */
+void printStr(const char message[], ...);
+
+int main(int argc, char *argv[]) {
+    int fd = open(argv[1], 'r');
+    str *String = readToStrSys(fd);
+    printStr("%s\n", String);
+    close(fd);
+    deleteStr(String);
+}
+
+unsigned len(str *string){return string -> len;}
+int strWrite(str *container, int positionStart, const char word[]){
+    int c = 0;
+    while (word[c] != '\0') {
+        container -> stringContainer[positionStart + c] = word[c];
+        c++;
+    }
+    return c;
+}
+char *getStr(str *string){return string -> stringContainer;}
+str *StringArr(char newStr[], overheadString *lengthSizes){
+    str *string = (str*) malloc(sizeof(str));
+    string -> stringContainer = (char*) malloc((strlen(newStr) + 1) * sizeof(char));
+    string -> lenFo = lengthSizes;
+    if (string == NULL) ERROR("Unable to allocate Memory");
+    string -> len = strWrite(string, 0, newStr);
+    string -> lenFo -> lenArr++;
+    string -> stringContainer[len(string)] = '\0';
+    return string;
+}
+void concatSingleChar(str *string, char chr){
+    string -> stringContainer = (char*) realloc(string -> stringContainer, (len(string) + 2) * sizeof(char));
+    string -> stringContainer[len(string)] = chr;
+    string -> len++;
+    string -> stringContainer[len(string)] = '\0';
+}
+
+void concatSingle(str *string, char arr[]){
+    string -> stringContainer = (char*) realloc(string -> stringContainer, (len(string) + strlen(arr) + 1) * sizeof(char));
+    unsigned int i = 0;
+    for (; arr[i] != '\0'; i++){
+        string -> stringContainer[len(string)+i] = arr[i];
+    }
+    string -> stringContainer[len(string)+i] = '\0';
+    string -> len += strlen(arr);
+}
+
+str* String(char newStr[]){
+    overheadString *temp = (overheadString*) malloc(sizeof(overheadString));
+    temp -> lenArr = 0;
+    return StringArr(newStr, temp);
+}
+
+str *readToStrSys(int fd){
+    lseek(fd, 0, SEEK_SET);
+    char buffer[1];
+    long ch;
+    str *temp = String("");
+    while ((ch = read(fd, buffer, 1)) > 0){
+        if (ch == 0) break; // Useless probably because of while loop but meh
+        concatSingleChar(temp, buffer[0]);
+    }
+    return temp;
+}
+
+void printStr(const char message[], ...){
+    str *tempMessage = String("");
+    va_list strList;
+    va_start(strList, message);
+    for (int i = 0; message[i] != '\0'; i++){
+        if (message[i] == '%'){
+            switch (message[i+1]){
+                case 's': //I don't feel like limiting size at the moment, Might Later DUNNO.
+                    concatSingle(tempMessage, getStr(va_arg(strList, str*)));
+                    i++;
+                    break;
+//                case 'a': //I don't feel like limiting size at the moment, Might Later DUNNO.
+//                    concatSingle(tempMessage, getStr(strArrToStr(va_arg(strList, str**))));
+//                    i++; Takes more importing from header then worth it. Won't cause any issues though.
+            }
+
+        }
+        else concatSingleChar(tempMessage, message[i]);
+    }
+    printf("%s", getStr(tempMessage));
+    va_end(strList);
+}
+
+void deleteStr(str *string){
+    free(string -> stringContainer);
+    free(string -> lenFo);
+    free(string);
+}
+
+//
+// Created by evanm on 2021-06-26.
+//
+
+#include <stdio.h>
+#include "stringio.h"
+#include "stringArray.h"
+
+int main(int argc, char *argv[]){
+    if (argc < 3) return 0;
+    FILE *read = fopen(argv[1], "r");
+    FILE *write = fopen(argv[2], "w");
+    str **arr = strArr("");
+    //for (int E = 1; E; appendStr(&arr, readLine(read, &E))); // Dunno What I have done By I Like It. I Really Like this. Looks kind of like for EOL in open("A2.txt", "r").readline(): arr.append(EOL) I know nothing alike but it sort of has that structure to it.
+    for (int E = 1; E; ){
+        str *string = readLine(read, &E);
+        appendStr(&arr,string);
+        deleteStr(string);  // Sadly I need to deallocate this useless sections :(
+    }
+    for (int i = (int) lenArray(arr)-1; i >= 0; i--){
+        if (i != 0) concatSingleChar(arr[i], '\n');
+        writeStrStd(write, arr[i]);
+    }
+    fclose(read);
+    fclose(write);
+}
+//
+// Created by evanm on 2021-06-26.
+//
+
+#include <stdio.h>
+#include "stringio.h"
+#include "stringArray.h"
+#include <unistd.h>
+#include <fcntl.h>
+
+int main(int argc, char *argv[]){
+    str *string = String("");
+    int i = 1;
+    for (; i < argc - 1; i++){
+        int fd = open(argv[i], O_RDONLY);
+        if (i > 1) concatSingleChar(string, '\n');
+        str *stringConcat = readToStrSys(fd);
+        concatStr(string, stringConcat);
+        close(fd);
+        deleteStr(stringConcat);
+    }
+    int fd = open(argv[i], O_CREAT|O_WRONLY|O_TRUNC, 0700);
+    writeStrSys(fd, string);
+    close(fd);
+    printStr("%s\n", string);
+}

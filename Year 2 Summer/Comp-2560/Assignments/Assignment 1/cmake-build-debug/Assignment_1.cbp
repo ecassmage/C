@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Assignment_1">
-				<Option output="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/Assignment_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
+				<Option output="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/Assignment_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -49,15 +49,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assignment_1"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assignment_1"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Assignment_1/fast">
-				<Option output="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/Assignment_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
+				<Option output="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug/Assignment_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,17 +67,44 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assignment_1/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C\ Language/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Assignment_1/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/e/Github/C/Year\ 2\ Summer/Comp-2560/Assignments/Assignment\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/main.c">
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Q3stdwriter.c">
 			<Option target="Assignment_1"/>
 		</Unit>
-		<Unit filename="/cygdrive/e/Github/C Language/Year 2 Summer/Comp-2560/Assignments/Assignment 1/CMakeLists.txt">
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question1.c">
+			<Option target="Assignment_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question4.c">
+			<Option target="Assignment_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question5.c">
+			<Option target="Assignment_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/Question8.c">
+			<Option target="Assignment_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/emq6.c">
+			<Option target="Assignment_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/emq7.c">
+			<Option target="Assignment_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/main.c">
+			<Option target="Assignment_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/noHole.c">
+			<Option target="Assignment_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/writer.c">
+			<Option target="Assignment_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Assignments/Assignment 1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
