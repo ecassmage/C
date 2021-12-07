@@ -1,0 +1,15 @@
+Assignment_4.cbp
+Assignment_4.exe
+Assignment_4.exe.stackdump
+CMakeCache.txt
+CMakeFiles
+Makefile
+Testing
+a.exe
+cmake_install.cmake
+donothing.c
+donothing.exe
+ls.c
+ls.exe
+result.txt
+test.c

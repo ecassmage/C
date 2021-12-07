@@ -1,8 +1,9 @@
 //
 // Created by evanm on 2021-06-26.
 //
-#include <stdio.h>
+//#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdarg.h>
@@ -18,7 +19,9 @@ typedef struct str{
 } str;
 
 void ERROR(char errorMessage[]){
-    printf("ERROR: %s\n", errorMessage);
+    write(STDOUT_FILENO, "\033[0;31m", strlen("\033[0;31m"));  // NOTE: Won't work for everything but should if my experiences with java are correct will work on uWindsor servers. stupid other consoles which don't have colors set up on them or can't interpret ansi.
+    write(STDOUT_FILENO, errorMessage, strlen(errorMessage));
+    write(STDOUT_FILENO, "\033[0m", strlen("\033[0m"));  // Reverts Console back to Normal Colors.
     exit(0);
 }
 str *readToStrSys(int fd);
@@ -33,7 +36,6 @@ char *getStr(str *string);
 char charAt(str *string, unsigned int index);
 unsigned strLen(const char *string);
 void deleteStr(str *string);
-str *readToStrSys(int fd);
 void printStr(const char message[], ...);
 
 int main(int argc, char *argv[]){
@@ -53,22 +55,22 @@ int main(int argc, char *argv[]){
     printStr("%s\n", string);
 }
 
+int writeStrSys(int fdSys, str *string){
+    lseek(fdSys, 0, SEEK_END);
+    write(fdSys, getStr(string), len(string) - 1);
+    return lseek(fdSys, 0, SEEK_END);
+}
 
-str *readToStrStd(FILE *fd){
-    fseek(fd, 0, SEEK_SET);
+str *readToStrSys(int fd){
+    lseek(fd, 0, SEEK_SET);
     char buffer[1];
+    long ch;
     str *temp = String("");
-    while (fread(buffer, 1, 1, fd) > 0){
-        if (buffer[0] == EOF) break;
+    while ((ch = read(fd, buffer, 1)) > 0){
+        if (ch == 0) break;
         concatSingleChar(temp, buffer[0]);
     }
     return temp;
-}
-
-int writeStrStd(FILE *fdStand, str *string){
-    fseek(fdStand, 0, SEEK_END);
-    fwrite(getStr(string), 1, len(string), fdStand);
-    return fseek(fdStand, 0, SEEK_END);
 }
 
 unsigned len(str *string){return string -> len;}
@@ -152,7 +154,7 @@ void printStr(const char message[], ...){
         }
         else concatSingleChar(tempMessage, message[i]);
     }
-    printf("%s", getStr(tempMessage));
+    write(STDOUT_FILENO, getStr(tempMessage), len(tempMessage));
     va_end(strList);
 }
 

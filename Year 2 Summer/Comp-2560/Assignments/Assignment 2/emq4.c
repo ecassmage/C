@@ -33,7 +33,6 @@ char *getStr(str *string);
 char charAt(str *string, unsigned int index);
 unsigned strLen(const char *string);
 void deleteStr(str *string);
-str *readToStrSys(int fd);
 void printStr(const char message[], ...);
 
 

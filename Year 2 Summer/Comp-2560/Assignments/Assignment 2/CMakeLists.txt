@@ -3,4 +3,4 @@ project(Assignment_2 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Assignment_2 read.h string.h stringio.h stringArray.h emq5.c emq4.c emappend.c emreverseFile.c emmycat.c)
+add_executable(Assignment_2 emq5.c emq4.c emappend.c emreverseFile.c emmycat.c read.h string.h stringio.h stringArray.h )

@@ -1,0 +1,15 @@
+Yes the File stays open, I would assume that it is because fork() creates a copy of the Parents Memory,
+so there are effectively two independent copies of the the file descriptor in circulation. Sort of like
+FILE *fd1 = fopen("text.txt", "r+");
+FILE *fd2 = fopen("text.txt", "r+");
+fclose(fd2);
+fd2 might be closed but fd1 is still open and usable.
+
+ Saying this though it looks like when running this program that the memory address of the file descriptor
+ does not change meaning it is still pointed to the same location.
+ Reading up on this I found this: https://en.wikipedia.org/wiki/Copy-on-write Because Wikipedia is the only true source
+ which can help the explanation that they share the same memory until they start modifying each other where they will then make the copy.
+So that could be part of the reason as to why the memory address doesn't change. though I feel like unlikely since they don't seem to change even after
+they are modified. There is also the fact I don't actually know how the assignment of new memory is done, so it could
+be that the stacks of memory and the naming convention so 0x00 all start at the same point, so naming is parallel inside both memory sections.
+This would explain the similar named memory address.

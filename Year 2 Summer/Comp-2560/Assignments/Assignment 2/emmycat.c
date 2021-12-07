@@ -1,7 +1,7 @@
-#include <stdio.h>
+//#include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <stdlib.h>
+#include <stdlib.h>  // I think this is fine even though its standard since I am just using it for exits and Mallocs and maybe other stuff
 #include <string.h>
 #include <stdarg.h>
 
@@ -21,8 +21,11 @@ typedef struct str{
     overheadString *lenFo;
 } str;
 
+// A custom ERROR Thingy. This is just a gutted version of a much larger ERROR generator. I dislike the not very helpful error messages C compilers gives during runtime so I built my Own.
 void ERROR(char errorMessage[]){
-    printf("ERROR: %s\n", errorMessage);
+    write(STDOUT_FILENO, "\033[0;31m", strlen("\033[0;31m"));  // NOTE: Won't work for everything but should if my experiences with java are correct will work on uWindsor servers. stupid other consoles which don't have colors set up on them or can't interpret ansi.
+    write(STDOUT_FILENO, errorMessage, strlen(errorMessage));
+    write(STDOUT_FILENO, "\033[0m", strlen("\033[0m"));  // Reverts Console back to Normal Colors.
     exit(0);
 }
 
@@ -97,10 +100,53 @@ str *readToStrSys(int fd);
  * @param ...
  */
 void printStr(const char message[], ...);
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{  FILE *fd;
+    char c;
+
+    if(argc==1)
+        fd=stdin;
+    else
+    if((fd = fopen(argv[1], "r"))==NULL){
+        fprintf(stderr, "Error opening %s, exiting\n", argv[1]);  	 		exit(0);
+    }
+
+    while( (c=getc(fd)) != EOF)
+        putc(c, stdout);
+
+    exit(0);
+}
+*/
+/*
+int main(int argc, char *argv[]){  // SYSTEMS
+    int fd;
+    char c[2];
+    if(argc==1)
+        fd=STDIN_FILENO;
+    else
+    if((fd = open(argv[1], 'r')) == -1){
+        ERROR("This is a Beautiful ERROR MESSAGE that states nothing was allocated.");
+    }
+    while( read(fd, c, 1) != 0){
+        write(STDOUT_FILENO, c, 1);
+    }
+    exit(0);
+}  Yes, Yes I am a Jerk for commenting this instead of the bigger stuffs. I like testing out weird creations.
+*/
+
+void theVoidOfNotGivingMeAFile(){
+    char c[2];
+    while( read(STDIN_FILENO, c, 1) != 0) write(STDOUT_FILENO, c, 1);
+}
 
 int main(int argc, char *argv[]) {
+
     if (argc == 1){
-        printf("No Files Given\n");
+        theVoidOfNotGivingMeAFile();
         exit(0);
     }
     int fd = open(argv[1], 'r');
@@ -109,6 +155,8 @@ int main(int argc, char *argv[]) {
     close(fd);
     deleteStr(String);
 }
+
+
 
 unsigned len(str *string){return string -> len;}
 
@@ -127,7 +175,7 @@ str *StringArr(char newStr[], overheadString *lengthSizes){
     str *string = (str*) malloc(sizeof(str));
     string -> stringContainer = (char*) malloc((strlen(newStr) + 1) * sizeof(char));
     string -> lenFo = lengthSizes;
-    if (string == NULL) ERROR("Unable to allocate Memory");
+    if (string == NULL) ERROR("ERROR: Unable to allocate Memory\n");
     string -> len = strWrite(string, 0, newStr);
     string -> lenFo -> lenArr++;
     string -> stringContainer[len(string)] = '\0';
@@ -188,7 +236,7 @@ void printStr(const char message[], ...){
         }
         else concatSingleChar(tempMessage, message[i]);
     }
-    printf("%s", getStr(tempMessage));
+    write(STDOUT_FILENO, getStr(tempMessage), len(tempMessage));
     va_end(strList);
 }
 

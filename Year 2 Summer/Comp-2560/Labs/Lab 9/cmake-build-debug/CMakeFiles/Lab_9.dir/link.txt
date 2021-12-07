@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/Lab_9.dir/sigFIFO.c.o  -o Lab_9.exe -Wl,--out-implib,libLab_9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

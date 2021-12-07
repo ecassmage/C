@@ -1,0 +1,94 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/ClientServerHeader.h
+
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/Sockets.h
+unistd.h
+-
+stdio.h
+-
+sys/socket.h
+-
+stdlib.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+string.h
+-
+ClientServerHeader.h
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/ClientServerHeader.h
+
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/client.c
+stdio.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+string.h
+-
+signal.h
+-
+Sockets.h
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/Sockets.h
+error.h
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/error.h
+str.h
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/str.h
+
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/error.h
+stdlib.h
+-
+stdarg.h
+-
+
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/queue.h
+string.h
+-
+stdlib.h
+-
+types.h
+-
+
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/server.c
+unistd.h
+-
+stdio.h
+-
+sys/socket.h
+-
+stdlib.h
+-
+netinet/in.h
+-
+string.h
+-
+signal.h
+-
+Sockets.h
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/Sockets.h
+error.h
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/error.h
+str.h
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/str.h
+queue.h
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/queue.h
+
+/cygdrive/e/Github/C/Year 2 Summer/Comp-2560/Final/Practice/str.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+

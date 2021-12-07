@@ -13,10 +13,13 @@ void childFunction(char *line){
 
     int num1, num2;
     char character;
+    char remainingBuffer[2] = {'\0'};
     char buffer[100] = {'\0'};
 
-    if (sscanf(line, "%d %c %d", &num1, &character, &num2) != 3) exit(50);
-
+    if (sscanf(line, "%d %c %d %1s", &num1, &character, &num2, remainingBuffer) != 3) {
+        exit(50);
+    }
+    if (remainingBuffer[0] != '\0') exit(50);
     switch (character){
         case '+':
             sprintf(buffer, "%d %c %d = %d\n", num1, character, num2, num1 + num2);
@@ -57,6 +60,7 @@ int main(){
             childFunction(buffer);
         else{
             wait(&waiting);
+            memset(buffer, 0, 100);
             switch (waiting >> 8){
                 case 50:
                     write(STDOUT_FILENO, "Wrong Statement\n", strlen("Wrong Statement\n"));

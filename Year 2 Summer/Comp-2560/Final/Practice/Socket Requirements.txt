@@ -1,0 +1,24 @@
+SERVER SOCKETS
+
+#include <unistd.h>
+#include <stdio.h>
+#include <sys/socket.h>
+#include <stdlib.h>
+#include <netinet/in.h>
+#include <string.h>
+
+struct sockaddr_in serverAddress;
+
+serverFileDescriptor = socket(AF_INET, SOCK_STREAM, 0);  // AF_INET tells the ip family, SOCK_STREAM tells the way information is to be sent or something, 0 is 
+
+serverAddress.sin_family = AF_INET;
+serverAddress.sin_addr.s_addr = INADDR_ANY;  // INADDR_ANY for any address and inet_addr(<IP Address>) for a specific IP Address.
+serverAddress.sin_port = Port;  // Can use htons(Port) for conversion. Probably safer to use it or something.
+
+bind(serverFileDescriptor, (struct sockaddr*) &serverAddress, sizeof(serverAddress));
+
+listen(server_fd, 3);
+
+int newSocket = accept(serverFileDescriptor, (struct sockaddr*) &serverAddress, (socklen_t*)&serverAddress)
+
+once this is done we have ourselves a socket connection or something.

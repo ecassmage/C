@@ -1,0 +1,3 @@
+mkfifo(temp, 0777) < 0 && errno != EEXIST); // Errno should only be checked if mkfifo returns a bad creation.
+
+have the child and parent open independently. Having Parent Open Both sides is possible but removes some safety from being sure both sides are actually opened.
